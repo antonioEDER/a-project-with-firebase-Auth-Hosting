@@ -2,8 +2,11 @@
 
 ```
 Esse é um projeto desenvolvido com integração do FireBase
+```
 
+```
 Nele vamos explorar ainda:
+
 - Entender o que é, para que serve e como funciona o Google Firebase.
 
 - Usar os principais recursos do Firebase em um projeto completo, escrito linha a linha, de forma simples e direta usando apenas HTML, CSS e JavaScript.
@@ -25,6 +28,7 @@ Nele vamos explorar ainda:
 - Definir regras de segurança e validação de informações no Realtime Database, Cloud Firestore e Cloud Storage.
 
 - Utilizar os recursos de hospedagem de sites do Firebase para implantar e gerenciar aplicações Web na internet com segurança (HTTPS).
+```
 
 <h2 align="center">Install</h2>
 
