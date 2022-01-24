@@ -1,0 +1,18 @@
+{
+  "name": "a-project-with-firebase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/antonioEDER/a-project-with-firebase.git",
+  "author": "Eder Antonio <antonioeder007@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "firebase": "^9.6.4",
+    "http": "^0.0.1-security",
+    "nodemon": "^2.0.15"
+  }
+}
