@@ -1,7 +1,7 @@
 # project-with-firebase
 
 ```
-Esse é um projeto desenvolvido com integração do FireBase
+Esse é um projeto Front-End integrado com FireBase
 ```
 
 ```
