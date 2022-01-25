@@ -68,3 +68,9 @@ function showAuth() {
 // document.querySelector('#password').type = 'text'
 // document.querySelector('#password').value = '123456'
 // document.querySelector('#password').type = 'password'
+
+
+// Atributos extras de configuração de e-mail
+var actionCodeSettings = {
+  url: 'http://localhost:3000/'
+}
