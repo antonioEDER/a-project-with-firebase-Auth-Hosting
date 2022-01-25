@@ -56,3 +56,10 @@ p {
 .alternative {
   background-color: #44c;
 }
+
+#loading {
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  z-index: 1;
+}
