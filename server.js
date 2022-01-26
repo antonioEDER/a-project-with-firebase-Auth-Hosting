@@ -1,14 +1,21 @@
-const path = require('path')
+const express = require("express");
+const webpack = require("webpack");
+const webpackMiddleware = require("webpack-dev-middleware");
+const path = require("path");
+const app = express();
+const webpackConfig = require("./webpack.config");
 
-const express = require('express')
+const port = "port";
+const publicDirectoryPath = path.join(__dirname, "./");
 
-const app = express()
+app.set(port, process.env.PORT || 3000);
+app.use(webpackMiddleware(webpack(webpackConfig)));
+app.use(express.static(publicDirectoryPath));
 
-const port = process.env.PORT || 3000
-const publicDirectoryPath = path.join(__dirname, './')
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "app", "index.html"));
+});
 
-app.use(express.static(publicDirectoryPath))
-
-app.listen(port, () => {
-    console.log(`Server is up on port ${port}!`)
-})
+app.listen(app.get(port), () => {
+  console.log(`Listening on port ${app.get(port)}`);
+});
