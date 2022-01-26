@@ -18,6 +18,7 @@ const minify = {
 
 const config = {
   entry: {
+    form: './app/js/form',
     utils: './app/js/utils',
     confFirebase: './app/js/firebase',
     authFirebase: './app/js/auth',
@@ -38,7 +39,7 @@ const config = {
     new htmlWebpackPlugin({
       template: path.join(__dirname, 'app', 'index.html'),
       filename: 'index.html',
-      chunks: ['utils', 'confFirebase', 'authFirebase', 'commons'],
+      chunks: ['form', 'confFirebase', 'commons', 'authFirebase', 'utils'],
       minify,
     }),
     extractSass,
