@@ -49,4 +49,6 @@ yarn start
 
 - Yarn
 - NodeJs
+- Nodemon
 - Firebase
+- Webpack
