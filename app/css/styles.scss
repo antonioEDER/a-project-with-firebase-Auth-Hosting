@@ -63,3 +63,18 @@ p {
   left: calc(50% - 100px);
   z-index: 1;
 }
+
+
+#auth img {
+  cursor: pointer;
+  margin: 4px;
+}
+
+button:hover {
+  opacity: 0.75;
+}
+
+#userImg {
+  height: 40px;
+  border-radius: 100%;
+}

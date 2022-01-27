@@ -7,19 +7,19 @@ Esse é um projeto Front-End integrado com Firebase
 ```
 Nele vamos explorar ainda:
 
-- Entender o que é, para que serve e como funciona o Google Firebase.
+- Google Firebase.
 
-- Usar os principais recursos do Firebase em um projeto completo, escrito linha a linha, de forma simples e direta usando apenas HTML, CSS e JavaScript.
+- Implementar o acesso por e-mail+senha, 
 
-- Implementar modificações dinâmicas em elementos visuais da aplicação Web sem a necessidade de recarregamento ou redirecionamento de páginas.
+- Redefinição de senha
 
-- Implementar e tratar processos assíncronos usando JavaScript.
+- Verificação de e-mail 
 
-- Implementar feedbacks visuais como animações de carregamento e barras de progresso.
+- Acesso por provedores de autenticação Google, GitHub e Facebook.
 
-- Implementar o acesso por e-mail+senha, redefinição de senha, verificação de e-mail e acesso por outros provedores de autenticação como Google, GitHub e Facebook.
+- Criar, ler, atualizar e remover dados nos bancos de dados Realtime Database
 
-- Criar, ler, atualizar e remover dados nos bancos de dados Realtime Database e Cloud Firestore.
+- Cloud Firestore.
 
 - Enviar, obter, e remover arquivos no armazenamento do Cloud Storage.
 

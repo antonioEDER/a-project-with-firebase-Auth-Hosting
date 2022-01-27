@@ -1,5 +1,5 @@
 import firebase from "firebase";
-import { showItem, showUserContent, showAuth, hideItem } from "./utils";
+import { showItem, showUserContent, showAuth, hideItem, loading } from "./utils";
 
 // Traduz para português brasileiro a autenticação do Firebase
 firebase.auth().languageCode = "pt-BR";
@@ -113,6 +113,19 @@ export function sendPasswordResetEmail() {
   }
 }
 
+// Função que permite a autenticação pelo Google
+export function signInWithGoogle() {
+  showItem(loading);
+  // signInWithPopup
+  // signInWithRedirect
+  firebase.auth().signInWithRedirect(new firebase.auth.GoogleAuthProvider()).catch(function (error) {
+    alert('Houve um erro ao autenticar usando o Google')
+    console.log(error)
+    hideItem(loading)
+  })
+}
+
 window.signOut = signOut;
 window.sendEmailVerification = sendEmailVerification;
 window.sendPasswordResetEmail = sendPasswordResetEmail;
+window.signInWithGoogle = signInWithGoogle;

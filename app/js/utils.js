@@ -1,28 +1,33 @@
-import "../css/styles.scss";
+/* eslint-disable no-undef */
+import '../css/styles.scss';
 
 // Defindo referências para elementos da página
-var authForm = document.getElementById("authForm");
-var authFormTitle = document.getElementById("authFormTitle");
-var register = document.getElementById("register");
-var access = document.getElementById("access");
+const authForm = document.getElementById('authForm');
+const authFormTitle = document.getElementById('authFormTitle');
+const register = document.getElementById('register');
+const access = document.getElementById('access');
 
-var auth = document.getElementById("auth");
-var userContent = document.getElementById("userContent");
-var userEmail = document.getElementById("userEmail");
+const auth = document.getElementById('auth');
+const userContent = document.getElementById('userContent');
+const userEmail = document.getElementById('userEmail');
 
-var sendEmailVerificationDiv = document.getElementById(
-  "sendEmailVerificationDiv"
+const sendEmailVerificationDiv = document.getElementById(
+  'sendEmailVerificationDiv',
 );
-var emailVerified = document.getElementById("emailVerified");
+const emailVerified = document.getElementById('emailVerified');
 
-var passwordReset = document.getElementById("passwordReset");
+const passwordReset = document.getElementById('passwordReset');
 
-export const loading = document.getElementById("loading");
+var userName = document.getElementById('userName')
+var userImg = document.getElementById('userImg')
+
+
+export const loading = document.getElementById('loading');
 
 // Alterar o formulário de autenticação para o cadastro de novas contas
 export function toggleToRegister() {
-  authForm.submitAuthForm.innerHTML = "Cadastrar conta";
-  authFormTitle.innerHTML = "Insira seus dados para se cadastrar";
+  authForm.submitAuthForm.innerHTML = 'Cadastrar conta';
+  authFormTitle.innerHTML = 'Insira seus dados para se cadastrar';
   hideItem(register);
   hideItem(passwordReset); // Esconder a opção de redefinição de senha
   showItem(access);
@@ -30,8 +35,8 @@ export function toggleToRegister() {
 
 // Alterar o formulário de autenticação para o acesso de contas já existentes
 export function toggleToAccess() {
-  authForm.submitAuthForm.innerHTML = "Logar";
-  authFormTitle.innerHTML = "Acesse a sua conta para continuar";
+  authForm.submitAuthForm.innerHTML = 'Logar';
+  authFormTitle.innerHTML = 'Acesse a sua conta para continuar';
   hideItem(access);
   showItem(passwordReset); // Esconder a opção de redefinição de senha
   showItem(register);
@@ -39,40 +44,43 @@ export function toggleToAccess() {
 
 // Simpplifica a exibição de elementos da página
 export function showItem(element) {
-  element.style.display = "block";
+  element.style.display = 'block';
 }
 
 // Simpplifica a remoção de elementos da página
 export function hideItem(element) {
-  element.style.display = "none";
+  element.style.display = 'none';
 }
 
 // Mostrar conteúdo para usuários autenticados
 export function showUserContent(user) {
+  console.log(user)
   if (user.emailVerified) {
-    emailVerified.innerHTML = "E-mail verificado";
-    hideItem(sendEmailVerificationDiv);
+    emailVerified.innerHTML = 'E-mail verificado'
+    hideItem(sendEmailVerificationDiv)
   } else {
-    emailVerified.innerHTML = "E-mail não verificado";
-    showItem(sendEmailVerificationDiv);
+    emailVerified.innerHTML = 'E-mail não verificado'
+    showItem(sendEmailVerificationDiv)
   }
-
-  userEmail.innerHTML = user.email;
-  hideItem(auth);
-  showItem(userContent);
+  userImg.src = user.photoURL ? user.photoURL : 'app/img/unknownUser.png'
+  userName.innerHTML = user.displayName
+  userEmail.innerHTML = user.email
+  hideItem(auth)
+  showItem(userContent)
 }
+
 
 // Mostrar conteúdo para usuários não autenticados
 export function showAuth() {
-  authForm.email.value = "";
-  authForm.password.value = "";
+  authForm.email.value = '';
+  authForm.password.value = '';
   hideItem(userContent);
   showItem(auth);
 }
 
 // Atributos extras de configuração de e-mail
 export const actionCodeSettings = {
-  url: "http://localhost:3000/",
+  url: 'http://localhost:3000/',
 };
 
 window.actionCodeSettings = actionCodeSettings;
