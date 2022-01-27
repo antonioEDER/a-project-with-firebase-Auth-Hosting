@@ -40,7 +40,7 @@ authForm.onsubmit = function (event) {
   }
 };
 
-// Observa o Estado do Login
+// Observador de Estado do Login
 firebase.auth().onAuthStateChanged(function (user) {
   hideItem(loading);
   if (user) {
@@ -116,10 +116,22 @@ export function sendPasswordResetEmail() {
 // Função que permite a autenticação pelo Google
 export function signInWithGoogle() {
   showItem(loading);
-  // signInWithPopup
-  // signInWithRedirect
-  firebase.auth().signInWithRedirect(new firebase.auth.GoogleAuthProvider()).catch(function (error) {
+  const fb = new firebase.auth.GoogleAuthProvider()
+  // firebase.auth().signInWithPopup(fb) 
+  // firebase.auth().signInWithRedirect(fb)
+  firebase.auth().signInWithPopup(fb).catch(function (error) {
     alert('Houve um erro ao autenticar usando o Google')
+    console.log(error)
+    hideItem(loading)
+  })
+}
+
+// Função que permite a autenticação pelo GitHub
+export function signInWithGitHub() {
+  showItem(loading)
+  const fb = new firebase.auth.GithubAuthProvider()
+  firebase.auth().signInWithPopup(fb).catch(function (error) {
+    alert('Houve um erro ao autenticar usando o GitHub')
     console.log(error)
     hideItem(loading)
   })
@@ -129,3 +141,4 @@ window.signOut = signOut;
 window.sendEmailVerification = sendEmailVerification;
 window.sendPasswordResetEmail = sendPasswordResetEmail;
 window.signInWithGoogle = signInWithGoogle;
+window.signInWithGitHub = signInWithGitHub;
