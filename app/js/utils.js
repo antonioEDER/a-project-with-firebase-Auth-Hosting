@@ -103,7 +103,7 @@ export function showError(prefix, error) {
 
 // Atributos extras de configuração de e-mail
 export const actionCodeSettings = {
-  url: 'http://localhost:3000/',
+  url: 'https://a-project-with-firebase-670d5.firebaseapp.com',
 };
 
 window.actionCodeSettings = actionCodeSettings;
