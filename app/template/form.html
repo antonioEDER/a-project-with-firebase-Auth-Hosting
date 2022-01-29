@@ -28,7 +28,7 @@
     <!--Possibilita a redefiniação de senha-->
     <p id="passwordReset">
       Esqueceu a senha?
-      <button class="alternative" onclick="window.sendPasswordResetEmail()">
+      <button class="alternative" onclick="sendPasswordResetEmail()">
         Redefinir minha senha
       </button>
     </p>
@@ -37,7 +37,7 @@
     <p id="register">
       Não possui uma conta?
       
-      <button onclick="window.toggleToRegister()" class="alternative">
+      <button onclick="toggleToRegister()" class="alternative">
         Cadastrar uma nova conta
       </button>
     </p>
@@ -45,14 +45,14 @@
     <!--Alternar o fomulário de autenticação para o acesso de contas já existentes-->
     <p id="access" class="startHidden">
       Já possui uma conta?
-      <button onclick="window.toggleToAccess()" class="alternative">
+      <button onclick="toggleToAccess()" class="alternative">
         Acesse a sua conta
       </button>
     </p>
     <br>
     <p>
       Ou acesse usando:<br>
-      <img src="app/img/google.png" alt="Logotipo do Google" onclick="window.signInWithGoogle()">
+      <img src="app/img/google.png" alt="Logotipo do Google" onclick="signInWithGoogle()">
       <img src="app/img/github.png" alt="Autenticação pelo GitHub" onclick="signInWithGitHub()">
       <img src="app/img/facebook.png" alt="Autenticação pelo Facebook" onclick="signInWithFacebook()">
     </p>
@@ -72,11 +72,14 @@
       <p id="userEmail"></p>
       <p id="emailVerified"></p>
       <div id="sendEmailVerificationDiv">
-        <button class="alternative" onclick="window.sendEmailVerification()">
+        <button class="alternative" onclick="sendEmailVerification()">
           Verificar e-mail
         </button>
       </div>
-      <button class="alternative" onclick="window.signOut()">Sair</button>
+      <button class="alternative" onclick="updateUserName()">Atualizar meu nome</button> <br>
+      <button class="danger" onclick="deleteUserAccount()">Excluir minha conta</button>
+      <button class="alternative" onclick="signOut()">Sair</button>
     </div>
   </div>
+  <div id="recaptcha-container"></div>
 </div>

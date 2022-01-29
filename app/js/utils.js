@@ -78,6 +78,29 @@ export function showAuth() {
   showItem(auth);
 }
 
+// centralizar e traduzir erros
+export function showError(prefix, error) {
+  console.log(error.code)
+  hideItem(loading)
+
+  switch (error.code) {
+    case 'auth/user-not-found':  alert(prefix + ' ' + 'Conta não encontrada!')
+    break
+    case 'auth/invalid-email': alert(prefix + ' ' + 'E-mail inválido!')
+    break;
+    case 'auth/wrong-password': alert(prefix + ' ' + 'Senha inválida!')
+    break;
+    case 'auth/weak-password': alert(prefix + ' ' + 'Senha deve ter ao menos 6 caracteres!')
+    break;
+    case 'auth/email-already-in-use': alert(prefix + ' ' + 'E-mail já está em uso por outra conta!')
+    break;
+    case 'auth/popup-closed-by-user': alert(prefix + ' ' + 'O popup de autenticação foi fechado antes da operação ser concluída!')
+    break;   
+  
+    default: alert(prefix + ' ' + error.message)
+  }
+}
+
 // Atributos extras de configuração de e-mail
 export const actionCodeSettings = {
   url: 'http://localhost:3000/',
@@ -91,3 +114,4 @@ window.showItem = showItem;
 window.toggleToAccess = toggleToAccess;
 window.toggleToRegister = toggleToRegister;
 window.loading = loading;
+window.showError = showError;
