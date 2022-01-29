@@ -37,7 +37,7 @@ const config = {
     }),
     // eslint-disable-next-line new-cap
     new htmlWebpackPlugin({
-      template: path.join(__dirname, 'app', 'index.html'),
+      template: path.join(__dirname, '/', 'index.html'),
       filename: 'index.html',
       chunks: ['form', 'confFirebase', 'commons', 'authFirebase', 'utils'],
       minify,

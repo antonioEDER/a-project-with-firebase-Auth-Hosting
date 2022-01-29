@@ -69,7 +69,6 @@ firebase login
 ```bash
 mkdir hosting && cd hosting
 ```
-
 5º - Iniciar Projeto
 ```bash
 firebase init
@@ -81,4 +80,15 @@ firebase init
 -> Set up automatic builds and deploys with GitHub? Yes
 ->  For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository)
 -> Set up the workflow to run a build script before every deploy? (y/N) N
+```
+5º - Configurar Projeto express
+
+```bash
+firebase init functions
+```
+```bash
+yarn add express
+```
+```bash
+sudo firebase serve --only functions
 ```
