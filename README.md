@@ -44,6 +44,7 @@ yarn start
 
 <h2 align="center">Documentações</h2>
 - https://firebase.google.com/docs/web/setup
+- https://firebase.google.com/docs/hosting/?authuser=0#implementation_path
 
 <h2 align="center">Dependências</h2>
 
@@ -52,3 +53,32 @@ yarn start
 - Nodemon
 - Firebase
 - Webpack
+
+<h2 align="center">Firebase Hosting</h2>
+"O Firebase Hosting oferece hospedagem rápida e segura para seu app da Web, conteúdo estático e dinâmico e microsserviços."
+1º - Acessar no console firebase menu Hosting
+2º - Instalar Firebase CLI
+```bash
+npm install -g firebase-tools
+```
+3º - Autenticar projeto
+```bash
+firebase login
+```
+4º - Criar pasta
+```bash
+mkdir hosting && cd hosting
+```
+
+5º - Iniciar Projeto
+```bash
+firebase init
+-> (o) Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+-> (o) Use an existing project
+-> (o) ..."select your projeto name the Firebase"
+-> What do you want to use as your public directory? (public) yes
+-> Configure as a single-page app (rewrite all urls to /index.html)? (y/N) N
+-> Set up automatic builds and deploys with GitHub? Yes
+->  For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository)
+-> Set up the workflow to run a build script before every deploy? (y/N) N
+```
