@@ -6,6 +6,7 @@ Esse é um projeto Front-End integrado com Firebase
 
 ```
 Nele vamos explorar ainda:
+```
 
 - Google Firebase.
 
@@ -15,7 +16,7 @@ Nele vamos explorar ainda:
 
 - Verificação de e-mail 
 
-- Acesso por provedores de autenticação Google, GitHub e Facebook.
+- Acesso por provedores de autenticação Google, GitHub e Facebook (FireBase hosting).
 
 - Criar, ler, atualizar e remover dados nos bancos de dados Realtime Database
 
@@ -28,7 +29,6 @@ Nele vamos explorar ainda:
 - Definir regras de segurança e validação de informações no Realtime Database, Cloud Firestore e Cloud Storage.
 
 - Utilizar os recursos de hospedagem de sites do Firebase para implantar e gerenciar aplicações Web na internet com segurança (HTTPS).
-```
 
 <h2 align="center">Install</h2>
 
@@ -45,7 +45,7 @@ yarn start
 <h2 align="center">Documentações</h2>
 - https://firebase.google.com/docs/web/setup
 - https://firebase.google.com/docs/hosting/?authuser=0#implementation_path
-- https://console.cloud.google.com/functions
+
 
 <h2 align="center">Dependências</h2>
 
