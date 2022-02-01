@@ -59,20 +59,32 @@ yarn start
 "O Firebase Hosting oferece hospedagem rápida e segura para seu app da Web, conteúdo estático e dinâmico e microsserviços." <br>
 1º - Acessar no console firebase menu Hosting<br>
 2º - Instalar Firebase CLI<br>
+<p>
 ```bash
 sudo npm install -g firebase-tools
 ```
+</p>
 3º - Autenticar projeto<br>
+<p>
 ```bash
 firebase login
 ```
+</p>
+
 4º - Criar pasta<br>
+<p>
 ```bash
 mkdir hosting && cd hosting
 ```
+</p>
+
 5º - Iniciar Projeto<br>
+<p>
 ```bash
-firebase init<br>
+firebase init
+```
+</p>
+
 -> (o) Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys<br>
 -> (o) Use an existing project<br>
 -> (o) ..."select your projeto name the Firebase"<br>
@@ -81,12 +93,15 @@ firebase init<br>
 -> Set up automatic builds and deploys with GitHub? Yes<br>
 ->  For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository)<br>
 -> Set up the workflow to run a build script before every deploy? (y/N) N<br>
-```
+
 
 6º  Deploy do projeto<br>
+<p>
 ```bash
 firebase deploy
 ```
+</p>
+
 
 7º Link do Projeto<br>
 https://a-project-with-firebase-670d5.web.app/
