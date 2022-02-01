@@ -4,9 +4,8 @@
 Esse é um projeto Front-End integrado com Firebase
 ```
 
-```
-Nele vamos explorar ainda:
-```
+
+<h2 align="center">Nele vamos explorar:</h2>
 
 - Google Firebase.
 
@@ -40,6 +39,18 @@ Start:
 
 ```bash
 yarn start
+```
+
+Build:
+
+```bash
+yarn build
+```
+
+Deploy Firebase hosting:
+
+```bash
+firebase deploy
 ```
 
 <h2 align="center">Documentações</h2>
