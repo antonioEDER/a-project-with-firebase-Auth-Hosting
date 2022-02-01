@@ -1,15 +1,12 @@
 <div>
   <!--Logotipo do TodoList-->
-
   <div class="center">
-    <img width="100px" src="app/img/loginusuario.svg" />
+    <img id="loginusuario" width="100px" src="" />
   </div>
-
   <!--Feedback de carregamento (loading)-->
   <div id="loading">
-    <img src="app/img/loading.gif" alt="Animação de carregamento" />
+    <img id="loadingImg" src="" alt="Animação de carregamento" />
   </div>
-
   <!--Conteúdo destinado para usuários não autenticados-->
   <div id="auth" class="center">
     <!--Formulário de autenticação-->
@@ -24,7 +21,6 @@
 
       <button type="submit" id="submitAuthForm">Logar</button>
     </form>
-
     <!--Possibilita a redefiniação de senha-->
     <p id="passwordReset">
       Esqueceu a senha?
@@ -32,7 +28,6 @@
         Redefinir minha senha
       </button>
     </p>
-
     <!--Alternar o fomulário de autenticação para o cadastro de novas contas-->
     <p id="register">
       Não possui uma conta?
@@ -41,7 +36,6 @@
         Cadastrar uma nova conta
       </button>
     </p>
-
     <!--Alternar o fomulário de autenticação para o acesso de contas já existentes-->
     <p id="access" class="startHidden">
       Já possui uma conta?
@@ -52,9 +46,9 @@
     <br>
     <p>
       Ou acesse usando:<br>
-      <img src="app/img/google.png" alt="Logotipo do Google" onclick="signInWithGoogle()">
-      <img src="app/img/github.png" alt="Autenticação pelo GitHub" onclick="signInWithGitHub()">
-      <img src="app/img/facebook.png" alt="Autenticação pelo Facebook" onclick="signInWithFacebook()">
+      <img id="google" src="" alt="Logotipo do Google" onclick="signInWithGoogle()">
+      <img id="github" src="" alt="Autenticação pelo GitHub" onclick="signInWithGitHub()">
+      <img id="facebook" src="" alt="Autenticação pelo Facebook" onclick="signInWithFacebook()">
     </p>
   </div>
 

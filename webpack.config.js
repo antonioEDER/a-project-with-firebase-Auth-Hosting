@@ -24,7 +24,7 @@ const config = {
     authFirebase: './app/js/auth',
   }, // Arquivos de entrada
   output: {
-    path: path.join(__dirname, 'dist'), // Diretorio de saída
+    path: path.join(__dirname, 'hosting/public'), // Diretorio de saída
     filename: '[name].[hash:8]bundle.js', // Arquivo de saída
     publicPath: '/', // Informa ao DevServe o diretorio do bundle
   },

@@ -1,6 +1,20 @@
 /* eslint-disable no-undef */
 import '../css/styles.scss';
 
+import loadingImg from '../img/loading.gif';
+import loginusuarioImg from '../img/loginusuario.svg';
+import googleImg from '../img/google.png';
+import githubImg from '../img/github.png';
+import facebookImg from '../img/facebook.png';
+import todoListFavicon from '../img/todoListFavicon.png';
+
+document.getElementById('loadingImg').src = loadingImg;
+document.getElementById('loginusuario').src = loginusuarioImg;
+document.getElementById('google').src = googleImg;
+document.getElementById('github').src = githubImg;
+document.getElementById('facebook').src = facebookImg;
+document.getElementById('shortcut').src = todoListFavicon;
+
 // Defindo referências para elementos da página
 const authForm = document.getElementById('authForm');
 const authFormTitle = document.getElementById('authFormTitle');

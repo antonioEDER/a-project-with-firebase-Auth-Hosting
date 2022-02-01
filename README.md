@@ -45,6 +45,7 @@ yarn start
 <h2 align="center">Documentações</h2>
 - https://firebase.google.com/docs/web/setup
 - https://firebase.google.com/docs/hosting/?authuser=0#implementation_path
+- https://console.cloud.google.com/functions
 
 <h2 align="center">Dependências</h2>
 
@@ -59,7 +60,7 @@ yarn start
 1º - Acessar no console firebase menu Hosting
 2º - Instalar Firebase CLI
 ```bash
-npm install -g firebase-tools
+sudo npm install -g firebase-tools
 ```
 3º - Autenticar projeto
 ```bash
@@ -81,14 +82,11 @@ firebase init
 ->  For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository)
 -> Set up the workflow to run a build script before every deploy? (y/N) N
 ```
-5º - Configurar Projeto express
 
+6º  Deploy do projeto
 ```bash
-firebase init functions
+firebase deploy
 ```
-```bash
-yarn add express
-```
-```bash
-sudo firebase serve --only functions
-```
+
+7º Link do Projeto
+https://a-project-with-firebase-670d5.web.app/
