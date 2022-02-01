@@ -56,37 +56,37 @@ yarn start
 - Webpack
 
 <h2 align="center">Firebase Hosting</h2>
-"O Firebase Hosting oferece hospedagem rápida e segura para seu app da Web, conteúdo estático e dinâmico e microsserviços."
-1º - Acessar no console firebase menu Hosting
-2º - Instalar Firebase CLI
+"O Firebase Hosting oferece hospedagem rápida e segura para seu app da Web, conteúdo estático e dinâmico e microsserviços." <br>
+1º - Acessar no console firebase menu Hosting<br>
+2º - Instalar Firebase CLI<br>
 ```bash
 sudo npm install -g firebase-tools
 ```
-3º - Autenticar projeto
+3º - Autenticar projeto<br>
 ```bash
 firebase login
 ```
-4º - Criar pasta
+4º - Criar pasta<br>
 ```bash
 mkdir hosting && cd hosting
 ```
-5º - Iniciar Projeto
+5º - Iniciar Projeto<br>
 ```bash
-firebase init
--> (o) Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
--> (o) Use an existing project
--> (o) ..."select your projeto name the Firebase"
--> What do you want to use as your public directory? (public) yes
--> Configure as a single-page app (rewrite all urls to /index.html)? (y/N) N
--> Set up automatic builds and deploys with GitHub? Yes
-->  For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository)
--> Set up the workflow to run a build script before every deploy? (y/N) N
+firebase init<br>
+-> (o) Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys<br>
+-> (o) Use an existing project<br>
+-> (o) ..."select your projeto name the Firebase"<br>
+-> What do you want to use as your public directory? (public) yes<br>
+-> Configure as a single-page app (rewrite all urls to /index.html)? (y/N) N<br>
+-> Set up automatic builds and deploys with GitHub? Yes<br>
+->  For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository)<br>
+-> Set up the workflow to run a build script before every deploy? (y/N) N<br>
 ```
 
-6º  Deploy do projeto
+6º  Deploy do projeto<br>
 ```bash
 firebase deploy
 ```
 
-7º Link do Projeto
+7º Link do Projeto<br>
 https://a-project-with-firebase-670d5.web.app/
