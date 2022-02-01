@@ -56,7 +56,7 @@ yarn start
 - Webpack
 
 <h2 align="center">Firebase Hosting</h2>
-"O Firebase Hosting oferece hospedagem rápida e segura para seu app da Web, conteúdo estático e dinâmico e microsserviços." <br>
+<p>"O Firebase Hosting oferece hospedagem rápida e segura para seu app da Web, conteúdo estático e dinâmico e microsserviços." </p>
 1º - Acessar no console firebase menu Hosting<br>
 2º - Instalar Firebase CLI<br>
 
