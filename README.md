@@ -54,7 +54,7 @@ firebase deploy
 ```
 
 <h2 align="center">Documentações</h2>
-- https://firebase.google.com/docs/web/setup
+- https://firebase.google.com/docs/web/setup <br>
 - https://firebase.google.com/docs/hosting/?authuser=0#implementation_path
 
 
