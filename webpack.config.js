@@ -1,9 +1,17 @@
 const path = require('path');
 const webpack = require('webpack');
+
+// O HtmlWebpackPlugin simplifica a criação de arquivos HTML para servir seus pacotes webpack.
 const htmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
+
+// Este plugin usa uglify-js para minimizar seu JavaScript.
 const UglifyJsWebpackPlugin = require('uglifyjs-webpack-plugin');
+
+// Prepare versões compactadas de ativos para servi-los com Content-Encoding.
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
+
+// Ele move todos os *.css módulos necessários em blocos de entrada para um arquivo CSS separado. 
+const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 
 const extractSass = new ExtractTextWebpackPlugin({
   filename: '[name].[contenthash:8].bundle.css',
@@ -63,6 +71,7 @@ const config = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
+        exclude: /(node_modules)/,
         options: {
           presets: [
             [
