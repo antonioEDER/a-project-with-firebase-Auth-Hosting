@@ -17,18 +17,6 @@ Esse é um projeto Front-End integrado com Firebase
 
 - Acesso por provedores de autenticação Google, GitHub e Facebook (FireBase hosting).
 
-- Criar, ler, atualizar e remover dados nos bancos de dados Realtime Database
-
-- Cloud Firestore.
-
-- Enviar, obter, e remover arquivos no armazenamento do Cloud Storage.
-
-- Implementar ações para pausar, continuar e cancelar uploads de arquivos no Cloud Storage.
-
-- Definir regras de segurança e validação de informações no Realtime Database, Cloud Firestore e Cloud Storage.
-
-- Utilizar os recursos de hospedagem de sites do Firebase para implantar e gerenciar aplicações Web na internet com segurança (HTTPS).
-
 <h2 align="center">Install</h2>
 
 ```bash
